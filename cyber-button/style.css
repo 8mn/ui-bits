@@ -1,0 +1,130 @@
+body {
+	background-color: #000;
+	font-family: "Share Tech Mono", monospace;
+
+	background: linear-gradient(90deg, #000 16px, transparent 1%) 50%,
+		linear-gradient(#000 16px, transparent 1%) 50%, #2b2a29;
+	background-size: 17px 17px;
+}
+.container {
+	width: 100%;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul {
+	display: flex;
+	/* flex-direction: column; */
+	width: 100%;
+	/* margin-top: 1rem; */
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	list-style: none;
+	padding: 1rem 8rem;
+	font-size: 1.6rem;
+	background-color: rgba(13, 46, 66, 0.5);
+	border-top: 1px solid #0a456d;
+	border-bottom: 1px solid #0a456d;
+	color: #0a456d;
+}
+
+.outline {
+	background-color: rgba(13, 46, 66, 0.5);
+	padding: 0.3rem 0;
+	margin-top: 2rem;
+	/* height: 90%; */
+	border-top: 1px solid #0a456d;
+	border-bottom: 1px solid #0a456d;
+}
+
+.left {
+	gap: 3rem;
+	display: flex;
+	height: 100%;
+}
+
+.logo {
+	/* background-color: rgba(60, 180, 255, 0.5); */
+	/* height: 100px; */
+}
+
+
+
+.menu-cta div:first-of-type {
+	height: 100%;
+	width: 100%;
+	border: 1px solid transparent;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-image-source: url("./border.svg");
+	border-image-slice: 20 20 fill;
+	border-image-width: 100px;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	transform: translateX(0) translateY(0);
+}
+
+.menu-cta div:last-of-type {
+	border: 1px solid transparent;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 2;
+	border-image-source: url("./border.svg");
+	border-image-slice: 20 20 fill;
+	border-image-width: 100px;
+	/* width: calc(100% + 7px);
+	height: calc(100% + 10px); */
+    height: 100%;
+    width: 100%;
+	left: 0px;
+	top: 0px;
+	transform: translateX(5px) translateY(5px);
+	/* z-index: -1; */
+}
+
+.menu-cta div {
+	content: "";
+	display: block;
+	position: absolute;
+	transition: transform 0.2s;
+	-webkit-transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+.cyber-btn {
+	color: #7ad2dd;
+	/* font-size: 13px; */
+	display: inline-block;
+	height: 44px;
+	line-height: 49px;
+	padding: 0 40px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.cyber-btn:hover div:first-of-type {
+	transform: translateX(5px) translateY(0);
+	transition-delay: 0.25s;
+}
+.cyber-btn:hover div:last-of-type {
+	transform: translateX(5px) translateY(0);
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+.btn-text {
+    /* font-size: 1rem; */
+	font-weight: 300;
+	position: relative;
+	z-index: 5;
+	white-space: nowrap;
+}
