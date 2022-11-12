@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg {
+    /* perspective: 100px; */
+    width: 100vw;
+    height: 40rem;
+    /* min-height: 70vh; */
+    background-color: #006802;
+    background-size: 30px 30px;
+    background-image: linear-gradient(to right, rgba(200, 250, 0, 0.2) 2px, transparent 2px),
+        linear-gradient(to bottom, rgba(200, 250, 0, 0.2) 2px, transparent 2px);
+   
+        /* transform: rotateY(60deg); */
+}
+
+
+
+
+
+body{
+  background-color:#006802;
+  margin:0 auto;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+.grid {
+  position:absolute;
+  width: 200%;
+  height: 75%;
+  left:50%;
+  transform:translate(-50%);
+  margin: 40px;
+  /* perspective property */
+  perspective: 50vh;
+  bottom:0%;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  bottom:0%;
+  left:50%;
+  position:absolute;
+  /* background: blue; */
+  border-top:8px solid rgba(200, 250, 0, 0.2);
+  transform: rotateX(65deg) translate(-50%);
+    background-size: 30px 30px;
+    background-image: linear-gradient(to right, rgba(200, 250, 0, 0.2) 2px, transparent 2px),
+        linear-gradient(to bottom, rgba(200, 250, 0, 0.2) 2px, transparent 2px);
+}
